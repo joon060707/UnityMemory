@@ -17,4 +17,7 @@ Unity Note
 * Input.GetAxis(string): Project Settings - Input Manager 내의 각종 축 이름 중 하나를 선택하여 1 또는 -1로 입력 받음
 * gameObject.SetActive([T/F]): 자기 자신 활성화 여부
 * (this. 또는 gameObject. 또는 생략)GetComponent<ClassType>(): 자기 자신에 들어 있는 컴포넌트(ClassType 타입) 얻기  
-
+* Time.deltaTime: 시간 변화량, 즉 1프레임당 시간 반환(60fps이면 1/60)
+* Instantiate(GameObject obj(, transform.position, transform.rotation)): 특정 게임오브젝트 생성(복제)
+* Destroy(GameObject obj, float time): 특정 게임오브젝트 일정 시간 후(또는 즉시) 삭제(obj에 자기 자신 넣으면 자기 자신 삭제)
+* (using UnityEngine.SceneManagement;) SceneManager.LoadScene(string scenename): 특정 씬 열기(기존 씬은 삭제)
