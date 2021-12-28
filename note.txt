@@ -1,0 +1,12 @@
+Unity Note
+-: Description
+*: Code
+
+2021/12/28
+- 유니티 내의 컴포넌트(Transform, Rigidbody...)는 C# 스크립트에서 클래스로서 사용 가능
+- 스크립트는 사실 어떤 GameObject(Plane, Sphere, Cube, Camera...)에도 넣을 수 있음
+- 스크립트 내의 public 필드는 유니티 내에서 입력 가능
+- Rigidbody: 물리적 특성 부여.
+
+
+* Input.GetKey(KeyCode.[ARROW]) : 키보드 키 입력
