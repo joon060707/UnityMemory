@@ -10,8 +10,11 @@ Unity Note
   이때 Collider 내의 is Trigger 체크시 트리거(OnTrigger)로서 사용
 - Audio Source: 음악 플레이어. AudioClip: 실제 음악 파일
   그러나 Main Camera 내에 있는 Audio Listener가 활성화되어야 실제로 게임 소리가 들림. Audio Listener은 씬에 1개만 존재해야 함.
-- 애니메이션: Animator Controller와 Animation 2개 생성하여 Controller 내에서 Animation 실행 시기 설정.
+- 애니메이션: Animator(Controller)와 Animation 2개 생성하여 Animator 내에서 Animation 실행 시기 설정.
   Parameters 내에서 bool과 trigger의 차이: trigger는 발동될 때만 true가 되고 바로 false 처리, bool은 그런 거 없음
+- Rigidbody 주요 코드: AddForce(Vector), position, velocity
+- Collider는 GameObject과 같은 일반 개체이고, Collision은 충돌 정보임.
+- 2D 기준 Sprite Renderer 내 Sorting Layer: 각종 그림들의 정렬 순서 지정
 
 
 
@@ -29,6 +32,7 @@ Unity Note
 * gameObject.SetActive([T/F]): 자기 자신 활성화 여부
 * (this. 또는 gameObject. 또는 생략)GetComponent<ClassType>(): 자기 자신에 들어 있는 컴포넌트(ClassType 타입) 얻기  
 * Time.deltaTime: 시간 변화량, 즉 1프레임당 시간 반환(60fps이면 1/60)
+* transform.Translate(Vector): 해당 벡터값만큼 이동
 * Instantiate(GameObject obj(, transform.position, transform.rotation)): 특정 게임오브젝트 생성(복제)
 * Destroy(GameObject obj, float time): 특정 게임오브젝트 일정 시간 후(또는 즉시) 삭제(obj에 자기 자신 넣으면 자기 자신 삭제)
 * (using UnityEngine.SceneManagement;) SceneManager.LoadScene(string scenename): 특정 씬 열기(기존 씬은 삭제)
