@@ -5,6 +5,8 @@ Unity Note
 
 
 2021/12/29
+- GameObject(좌측 Hierarchy)가 각 Component를 포함하고 있다고 생각할 것.
+- SetActive()는 GameObject의 메소드임에 유의.
 - Tag: 각 GameObject들의 종류를 구분하는 표식. 코드 내에서 참조하여 해당 오브젝트들만 고를 수 있음.
 - (Box, Sphere, ...) Collider: 다른 게임 오브젝트들과의 충돌을 감지.(OnCollision)
   이때 Collider 내의 is Trigger 체크시 트리거(OnTrigger)로서 사용
@@ -13,9 +15,18 @@ Unity Note
 - 애니메이션: Animator(Controller)와 Animation 2개 생성하여 Animator 내에서 Animation 실행 시기 설정.
   Parameters 내에서 bool과 trigger의 차이: trigger는 발동될 때만 true가 되고 바로 false 처리, bool은 그런 거 없음
 - Rigidbody 주요 코드: AddForce(Vector), position, velocity
-- Collider는 GameObject과 같은 일반 개체이고, Collision은 충돌 정보임.
+- Collider는 GameObject과 같은 일반 개체이고, Collision은 충돌 정보임.(단, Collision 내에 Collider 접근 가능)
 - 2D 기준 Sprite Renderer 내 Sorting Layer: 각종 그림들의 정렬 순서 지정
-
+- 오브젝트의 절대적인 크기 체크는 Box Colider 내의 Size를 활용하면 됨.
+- Inspector 내의 Overrides: Prefabs에서 갖고 와서 수정한 GameObject를 다시 Prefabs에 덮어쓸 때 사용(Apply All)
+* Awake()는 Start() 한 프레임 전에 실행.
+* OnEnable()은 이 GameObject 내의 해당 스크립트 컴포넌트가 체크(Enable)될 때 발동.
+  따라서 GameObject가 SetActive(true)될 때도 발동.
+* SceneManager.GetActiveScene(): 현재 열린 씬(name으로 이름 획득 가능)
+* (C#) string.Format(format, args)
+  format: {순서 : (-는 좌측 정렬)최소 너비 : 서식}
+  서식: D, X, N, F, E 등등 (문자열은 서식 자리 생략)
+  ex) Debug.Log(string.Format("{0:-8} {1:10:D}", "Hello", 5678));  -> Hello         5678
 
 
 2021/12/28
