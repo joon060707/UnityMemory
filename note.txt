@@ -12,9 +12,12 @@ Unity Note
     Lens-FoV: 시야각
     Body-Follow Offset: 카메라 (비추는) 위치
     Aim=Tracked Object Offset: 카메라 (비추는) 각도
-    
+- Line Renderer: 점들을 잇는 선 그리기
+- Coroutine: 코드 처리 중간에 일정 시간 작업 중지(대기)
 * Quaternion.Euler(Vector3): Vector3 형식의 회전을 Quaternion으로 변환
 * Quaternion 객체의 eulerAngles: Quaternion 형식의 회전을 Vector3으로 변환
+* (C#) yield return f(): f()에서 반환되는 IEnumerator 내의 원소들을 하나씩 반환
+* yield return new WaitForSeconds(float second): 위 원리를 이용해서 일정 시간 동안 값 반환하며 시간 끌기
 
 
 2021/12/29
