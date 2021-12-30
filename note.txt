@@ -4,6 +4,19 @@ Unity Note
 ->: Procedure
 
 
+2021/12/30
+- (C#) property: getter와 setter를 포함하는 함수형 변수
+- Cinemachine: 캐릭터 추적 카메라 만들 때 활용. Cinemachine Brain 컴포넌트와 CM Virtual Camera로 시작.
+  Follow에 따라갈 대상, Look At에 비출 대상 선택(사실상 비슷)
+  Virtual Camera 내의 설정
+    Lens-FoV: 시야각
+    Body-Follow Offset: 카메라 (비추는) 위치
+    Aim=Tracked Object Offset: 카메라 (비추는) 각도
+    
+* Quaternion.Euler(Vector3): Vector3 형식의 회전을 Quaternion으로 변환
+* Quaternion 객체의 eulerAngles: Quaternion 형식의 회전을 Vector3으로 변환
+
+
 2021/12/29
 - GameObject(좌측 Hierarchy)가 각 Component를 포함하고 있다고 생각할 것.
 - SetActive()는 GameObject의 메소드임에 유의.
