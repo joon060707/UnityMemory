@@ -20,6 +20,8 @@ Unity Note
 - (C#) virtual: 부모 클래스 함수에 입력하는 키워드로서 자식에서 override할 수 있는 함수.
 - (C#) delegate(대표, 대리, 위임): 일종의 함수 포인터. java에서의 함수형 인터페이스와 비슷(같진 않음). 함수를 인자로 받음.
   java Consumer와 C# Action이 비슷하다고 함. 다만 action(t)이냐 consumer.accept(t) 정도 차이?
+  Action delegate에 += func 를 붙여 함수(매개변수X) 실행 예약 가능. 괄호 없이 추가됨에 유의.
+  delegate에 함수가 추가되지 않은 경우 null임.
   
   [java]
   package testapp;
