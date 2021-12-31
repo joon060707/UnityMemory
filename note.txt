@@ -4,6 +4,15 @@ Unity Note
 ->: Procedure
 
 
+2021/12/31
+- Raycast: position에서 forward 방향으로 rayLength만큼 쏴서 out RayCasthit에 정보 저장. 
+- out: 값으로 갖는 데이터를 참조 형식으로 사용하는 키워드.
+  클래스 객체는 자동으로 참조로 이용되지만, int, float, struct 등 값 데이터는 out을 사용해야 참조로 이용 가능. 즉, 일종의 임시 전역변수화 키워드.
+  ref도 비슷한 기능. 단, ref는 초기화 단계 필요. out은 초기화 필요 없음.
+
+
+
+
 2021/12/30
 - (C#) property: getter와 setter를 포함하는 함수형 변수
 - Cinemachine: 캐릭터 추적 카메라 만들 때 활용. Cinemachine Brain 컴포넌트와 CM Virtual Camera로 시작.
