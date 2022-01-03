@@ -4,6 +4,20 @@ Unity Note
 ->: Procedure
 
 
+2022/01/03
+- gameObject.SetActive(): Hierarchy의 게임 오브젝트의 사용 여부(제일 위의 체크박스)
+  vs 
+  monobehaviour(script, comp...).enabled : 게임 오브젝트에 부착된 스크립트, 컴포넌트의 사용 여부
+  (이게 체크되면 OnEnable() 발동)
+- AI - Navigation - Bake에서 해당 크기의 오브젝트가 다닐 수 있는 표면(NavMesh) 계산 가능
+  NavMeshAgent가 실질적인 AI 이동 에이전트(캐릭터 자체에 부착)
+- Collider vs Trigger
+  Collider는 실질적인 충돌을 필요로 할 때 사용
+  Trigger는 그저 닿았을 때 어떤 결과를 만들기 위해 사용
+* Quaternion.LookRotation(법선벡터): 법선벡터 방향으로 회전
+
+
+
 2021/12/31
 - Raycast: position에서 forward 방향으로 rayLength만큼 쏴서 out RayCasthit에 정보 저장. 
 - (C#) out: 값으로 갖는 데이터를 참조 형식으로 사용하는 키워드.
@@ -101,7 +115,7 @@ Unity Note
 * Input.GetKey(KeyCode.[ARROW]): 키보드 키 입력
 * Input.GetAxis(string): Project Settings - Input Manager 내의 각종 축 이름 중 하나를 선택하여 1 또는 -1로 입력 받음
 * gameObject.SetActive([T/F]): 자기 자신 활성화 여부
-* (this. 또는 gameObject. 또는 생략)GetComponent<ClassType>(): 자기 자신에 들어 있는 컴포넌트(ClassType 타입) 얻기  
+* (this. 또는 gameObject. 또는 생략)GetComponent<ClassType>(): 자기 자신에 들어 있는 컴포넌트(ClassType 타입) 얻기. 안드로이드의 findViewById()라고 생각하면 됨.
 * Time.deltaTime: 시간 변화량, 즉 1프레임당 시간 반환(60fps이면 1/60)
 * transform.Translate(Vector): 해당 벡터값만큼 이동
 * Instantiate(GameObject obj(, transform.position, transform.rotation)): 특정 게임오브젝트 생성(복제)
