@@ -28,6 +28,8 @@ Unity Note
   Object에는 모든 오브젝트가 들어갈 수 있음. (주로 스크립트를 포함하는 게임오브젝트를 선택함)
   Object 선택시 그 오브젝트가 포함하는 구성요소가 클래스 단위로 표시됨
   클래스 내에서 호출하고자 하는 함수 선택하면 됨.
+- Mathf 클래스: 간단한 수학 함수 모음
+* Mathf.Lerp(a, b, p) = a*(1-p) + b*p
 * Quaternion.LookRotation(법선벡터): 법선벡터 방향으로 회전
 
 
@@ -71,6 +73,11 @@ Unity Note
         Console.WriteLine(func(10, 20));    
     }
   }
+  // Action 대리자는 클래스 내의 함수만 추가할 수 있음.
+  // 따라서 외부 함수를 추가하려면 아래와 같이 해야 함.
+  // enemy.onDeath += delegate() { enemies.Remove(enemy); };
+  // enemy.onDeath += () => { Destroy(enemy.gameObject, 10f); };
+  // enemy.onDeath += () => GameManager.instance.AddScore(score);
   
 
 
