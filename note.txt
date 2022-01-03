@@ -14,8 +14,21 @@ Unity Note
 - Collider vs Trigger
   Collider는 실질적인 충돌을 필요로 할 때 사용
   Trigger는 그저 닿았을 때 어떤 결과를 만들기 위해 사용
-* Quaternion.LookRotation(법선벡터): 법선벡터 방향으로 회전
+- Singleton code: 아래와 같이 만들고 외부에서 instance로 이용
 
+    private static CLASS m_instance;
+    public static CLASS instance{
+        get{
+            if (m_instance == null) m_instance = FindObjectOfType<CLASS>();
+            return m_instance;
+        }
+    }
+
+- Button 내 OnClick()
+  Object에는 모든 오브젝트가 들어갈 수 있음. (주로 스크립트를 포함하는 게임오브젝트를 선택함)
+  Object 선택시 그 오브젝트가 포함하는 구성요소가 클래스 단위로 표시됨
+  클래스 내에서 호출하고자 하는 함수 선택하면 됨.
+* Quaternion.LookRotation(법선벡터): 법선벡터 방향으로 회전
 
 
 2021/12/31
