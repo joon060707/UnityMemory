@@ -1,3 +1,4 @@
 Practice List
 
 01. 다중 씬 연습
+ㄴ 씬 전환시 버튼 등 UI 사용
