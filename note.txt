@@ -16,6 +16,7 @@ Unity Note
 - 물체 클릭 반응
   OnClick은 UI에만 적용
   OnMouse~~~를 일반 게임 오브젝트에 적용
+* Application.Quit(): 앱 종료
 
 
 
