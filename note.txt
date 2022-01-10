@@ -135,7 +135,7 @@ Unity Note
   따라서 GameObject가 SetActive(true)될 때도 발동.
 * SceneManager.GetActiveScene(): 현재 열린 씬(name으로 이름 획득 가능)
 * (C#) string.Format(format, args)
-  format: {순서 : (-는 좌측 정렬)최소 너비 : 서식}
+  format: {순서 : (-는 좌측 정렬)최소 너비 : 서식(F이면 숫자는 소수점 자리)}
   서식: D, X, N, F, E 등등 (문자열은 서식 자리 생략)
   ex) Debug.Log(string.Format("{0:-8} {1:10:D}", "Hello", 5678));  -> Hello         5678
 
