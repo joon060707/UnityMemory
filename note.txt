@@ -4,6 +4,43 @@ Unity Note
 ->: Procedure
 
 
+2022/01/11
+
+public class Ball : MonoBehaviour
+{
+    public int speed = 300;
+
+    Rigidbody body;
+    Vector3 velocity;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        body = GetComponent<Rigidbody>();
+        body.AddForce(speed * new Vector3(Random.Range(0,1f), 0, Random.Range(0, 1f)));
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        velocity = body.velocity;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // 충돌 구현 방법
+        // indirection: 충돌할 때의 공의 방향 벡터
+        // innormal: 충돌한 벽의 표면에 수직인 벡터
+        // 반드시 Update에서 기록된 velocity로 계산해야 함. 충돌할 때 순간 속도가 줄어들기 때문.
+        Vector3 newDirection = Vector3.Reflect(velocity.normalized, collision.GetContact(0).normal);
+        float crashSpeed = velocity.magnitude;
+        body.velocity = newDirection * crashSpeed;
+    }
+}
+
+
+
 2022/01/04
 - Anchor: 나 자신의 배치를 부모의 어느 지점을 기준으로 측정할 건가? (왼쪽 아래가 X=0, Y=0)
   (Min 지점을 기준으로 우선 측정됨에 유의)
