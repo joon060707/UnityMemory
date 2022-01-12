@@ -6,27 +6,18 @@ Unity Note
 
 2022/01/11
 
+- 게임 이동속도 관련해서는 꼭 deltaTime을 적용해줘야 함!!!
+  에디터에서는 0.0008(1250fps) 정도 측정
+  실제 빌드에서는 0.013(75fps) 정도 측정
+  ex) float barSpeed = gameManager.barSpeed * Time.deltaTime;
+
+-> 핑퐁 게임 충돌 구현
 public class Ball : MonoBehaviour
 {
     public int speed = 300;
-
     Rigidbody body;
     Vector3 velocity;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        body = GetComponent<Rigidbody>();
-        body.AddForce(speed * new Vector3(Random.Range(0,1f), 0, Random.Range(0, 1f)));
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        velocity = body.velocity;
-    }
-
+    void Update() { velocity = body.velocity;}
     private void OnCollisionEnter(Collision collision)
     {
         // 충돌 구현 방법
