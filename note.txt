@@ -166,6 +166,9 @@ public class Ball : MonoBehaviour
   format: {순서 , (-는 좌측 정렬)최소 너비 : 서식(F이면 숫자는 소수점 자리)}
   서식: D, X, N, F, E 등등 (문자열은 서식 자리 생략)
   ex) Debug.Log(string.Format("{0:-8} {1,10:D}", "Hello", 5678));  -> Hello         5678
+  
+  참고: https://docs.microsoft.com/ko-kr/dotnet/standard/base-types/standard-numeric-format-strings
+  참고: https://docs.microsoft.com/ko-kr/dotnet/api/system.string.format?view=net-6.0
 
 
 2021/12/28
