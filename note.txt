@@ -4,6 +4,35 @@ Unity Note
 ->: Procedure
 
 
+2022/01/20
+
+(C#)
+- float < double < decimal
+- switch에 object 할당 가능, 각 case에 자료형 할당 가능
+            object o = 0;
+            switch (o)
+            {
+                case 1:
+                    Console.WriteLine(1);
+                    return;
+                case float flt:
+                    break;
+                case double dbl:
+                    break;
+                case int inte:
+                    break;
+                case HashSet<int> sets:
+                default:
+                    break;
+            }
+- String.Format() 대신 $ 사용 가능
+            Console.WriteLine("Some text");
+            Console.WriteLine($"Some text with {"value 1"} and {str}, not with {0}", idontno);
+            Console.WriteLine("Some text with {0} and {1}, not with valname", notnull, idontno);
+
+
+
+
 2022/01/14
 - Serialization(직렬화): 에디터 내에서 값을 수정할 수 있도록(정확히는 오브젝트를 문자나 숫자로 변환) 하는 작업
   public 변수 또는 [SerializeField]를 붙인 변수에 적용됨
