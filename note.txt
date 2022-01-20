@@ -29,8 +29,10 @@ Unity Note
             Console.WriteLine("Some text");
             Console.WriteLine($"Some text with {"value 1"} and {str}, not with {0}", idontno);
             Console.WriteLine("Some text with {0} and {1}, not with valname", notnull, idontno);
-
-
+- ref vs out(2)
+  out으로 설정된 매개변수는 결과값이 저장되지 않으면 오류 발생, ref은 그렇지 않음
+  out으로 설정된 매개변수 자리에는 매개변수 자리에서 선언과 동시에 이후부터 이용 가능. 즉 선언 및 사용을 한번에.
+- C#은 Python처럼 함수 내에 함수 존재 가능
 
 
 2022/01/14
