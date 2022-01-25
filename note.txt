@@ -6,17 +6,22 @@ Unity Note
 
 2022/01/25
 
+- Android는 Scaled with Screen Size로 설정할 것! 픽셀값으로 해버리면 좀... 작아짐.
+
 Unity AR
-- Android는 AR Foundation과 AR Core 사용.
-- Graphic: Vulkan 제거
-- API >= 24
+- Android는 AR Foundation과 AR Core 사용. (Package Manager 사용)
+- 프로젝트 설정
+ㄴ Graphic: Vulkan 제거
+ㄴ IL2CPP 및 AMD64 체크 여부 확인
+ㄴ API >= 24
 - XR - AR Session: AR 관리
 - XR - AR Session Origin: AR 카메라 및 각종 요소를 포함 (기존 카메라 사용 X)
-  -> 여기에 Scripts - UnityEngine.XR.ARFoundation 내 스크립트로 추가
+  -> 여기에 Scripts - UnityEngine.XR.ARFoundation 내 Manager를 스크립트로 추가
   -> XR - Plane, Point Cloud, Face 등 추가하여 Component Prefab에 연결
--
+- AR Camera - Manager - Facing Direction: World(후면), User(전면)
 
-
+// Raycast(광선을 쏘는 지점, 광선이 닿은 개체, 추적 개체 유형)
+ARraycastManager.Raycast(position, List<ARRaycastHit> hits, TrackableType.Planes);
 
 
 
