@@ -4,6 +4,24 @@ Unity Note
 ->: Procedure
 
 
+2022/01/25
+
+Unity AR
+- Android는 AR Foundation과 AR Core 사용.
+- Graphic: Vulkan 제거
+- API >= 24
+- XR - AR Session: AR 관리
+- XR - AR Session Origin: AR 카메라 및 각종 요소를 포함 (기존 카메라 사용 X)
+  -> 여기에 Scripts - UnityEngine.XR.ARFoundation 내 스크립트로 추가
+  -> XR - Plane, Point Cloud, Face 등 추가하여 Component Prefab에 연결
+-
+
+
+
+
+
+
+
 2022/01/20
 
 (C#)
