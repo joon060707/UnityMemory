@@ -9,6 +9,8 @@ Unity Note
 - ARFaceManager : ARTrackableManager
 ㄴ trackables 리스트에 원하는 추적 객체 저장됨
 ㄴ foreach(ARFace face in manager.trackables)로 개별 반복 접근
+- Asset - Create - XR - Reference Image Library: 이미지 트래킹
+
 * ((ARCoreFaceSubsystem)subsystem).GetRegionPoses(face.trackableId, Allocator.Persistent, ref faceRegions): 머리와 코의 위치 반환
 
 
