@@ -4,6 +4,12 @@ Unity Note
 ->: Procedure
 
 
+2022/01/28
+C# Delegate
+
+
+
+
 2022/01/26
 
 - ARFaceManager : ARTrackableManager
