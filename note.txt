@@ -9,6 +9,7 @@ Unity Note
 - PhysicsMaterial: 얼마나 튕기는지 설정. Friction을 0으로 하면 튕기지 않음.
 - Lighting - Fog: 안개 설정 가능
 - Window - Lighting - Auto Generate 체크 해제 - Generate Lighting 체크시 재시작해도 빛 변하지 않음.
+* Invoke("MethodName", time): 해당 초 이후에 메소드 실행
 
 
 2022/01/28
