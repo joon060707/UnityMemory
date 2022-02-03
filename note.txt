@@ -4,8 +4,19 @@ Unity Note
 ->: Procedure
 
 
+2022/02/03
+
+- PhysicsMaterial: 얼마나 튕기는지 설정. Friction을 0으로 하면 튕기지 않음.
+
+
+
 2022/01/28
 C# Delegate
+- public delegate void Helper(int i); -> 새로운 형식으로 추가됨
+-> public void test(int num) 추가 가능(같은 형식)
+-> Helper helper += test;
+-> helper(10);
+
 
 
 
