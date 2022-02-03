@@ -5,9 +5,10 @@ Unity Note
 
 
 2022/02/03
-
+- FixedUpdate: 특정 시간마다 Update 호출하는 메시지 메소드. 보통 50fps(0.02). Project Settings - Time에서 수정 가능
 - PhysicsMaterial: 얼마나 튕기는지 설정. Friction을 0으로 하면 튕기지 않음.
-
+- Lighting - Fog: 안개 설정 가능
+- Window - Lighting - Auto Generate 체크 해제 - Generate Lighting 체크시 재시작해도 빛 변하지 않음.
 
 
 2022/01/28
