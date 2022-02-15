@@ -41,10 +41,10 @@ C# Delegate
 
 Unity AR
 - Android는 AR Foundation과 AR Core 사용. (Package Manager 사용)
-- 프로젝트 설정
+- 프로젝트 설정-Player
 ㄴ Graphic: Vulkan 제거
-ㄴ IL2CPP 및 AMD64 체크 여부 확인
-ㄴ API >= 24
+ㄴ Configuration: IL2CPP 및 AMD64 체크 여부 확인
+ㄴ Identification: API >= 24
 - XR - AR Session: AR 관리
 - XR - AR Session Origin: AR 카메라 및 각종 요소를 포함 (기존 카메라 사용 X)
   -> 여기에 Scripts - UnityEngine.XR.ARFoundation 내 Manager를 스크립트로 추가
