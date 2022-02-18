@@ -1,17 +1,30 @@
 Practice List
 
+Oculus 테스트: ARPractice01
+인칭 테스트: UnityPreview
+
 01. 다중 씬 연습
+ㄴ UnityPractice01
 ㄴ 씬 전환시 버튼 등 UI 사용
 ㄴ 숫자 맞추기 게임
 
 02. 핑퐁 게임
+ㄴ UnityPreview, PingPong
 ㄴ 단순 위치 변경
 ㄴ 벽 충돌 벡터
 
 03. 버튼 게임
+ㄴ UnityPractice02
 ㄴ 레벨제 게임, 애니메이션 연습
 ㄴ 직선, 원, 자유형 애니메이션 구현
 
-04. 
-ㄴ 인칭 전환 
+04. 게임 따라하기
+ㄴ UnityPractice03
+ㄴ PhysicMaterial
 
+05. AR 연습
+ㄴ ARPractice02, 03
+ㄴ 평면, 얼굴, 마커 인식
+
+06. 지형 연습
+ㄴ UnityPractice04
