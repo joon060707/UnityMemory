@@ -1,1 +1,1 @@
-{"name": "안녕", "age": 30, "distance": 34.5, "hobby":["soccer", "swimming"], "about":{"greet":"Hello!", "message":"Have a good time!!", "show":false}}
+{"name": "안녕", "age": 30, "distance": 34.5, "hobby":["soccer", "swimming"], "about":{"greet":"Hello!", "message":"Have a good time!!", "show":true}}
